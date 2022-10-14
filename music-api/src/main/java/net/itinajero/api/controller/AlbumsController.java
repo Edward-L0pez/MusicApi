@@ -16,11 +16,11 @@ public class AlbumsController {
 
 	@Autowired
 	private IAlbumsService serviceAlbums;
-	
+
 	@GetMapping("/albums")
 	public List<Album> buscarTodos(){
 		return serviceAlbums.buscarTodos();
-		
+
 	}
-	
+
 }
